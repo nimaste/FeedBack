@@ -1,0 +1,10 @@
+@media screen and (max-width: 600px) {
+    .imagens{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .imagens img{
+        width: 40px;
+    }    
+}
