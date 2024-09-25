@@ -1,10 +1,61 @@
-@media screen and (max-width: 600px) {
-    .imagens{
-        align-items: center;
-        justify-content: center;
-        display: flex;
-    }
-    .imagens img{
-        width: 40px;
-    }    
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+.imagens {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.imagens img {
+    width: 50px; /* Tamanho das estrelas */
+    cursor: pointer;
+    margin: 0 5px;
+    transition: transform 0.2s;
+}
+
+.imagens img:hover {
+    transform: scale(1.1); /* Efeito de hover nas estrelas */
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    resize: vertical; /* Permite redimensionar apenas verticalmente */
+    box-sizing: border-box; /* Inclui o padding no tamanho total */
+}
+
+button {
+    background-color: #28a745; /* Cor do botão */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838; /* Cor do botão ao passar o mouse */
 }
