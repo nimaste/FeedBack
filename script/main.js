@@ -52,7 +52,6 @@ function enviarDados() {
     let valor = nota + 1;
 
     if (comentario && valor >= 1) {
-        // Fazendo a requisição POST para o backend
         fetch('http://localhost:3000/avaliar', {
             method: 'POST',
             headers: {
@@ -71,6 +70,6 @@ function enviarDados() {
         avaliar(-1);
         document.getElementById('input').value = "";
     } else {
-        alert('Por favor, preencha sua análise e selecione uma nota!');
+        alert("Por favor, preencha todos os campos!");
     }
 }
