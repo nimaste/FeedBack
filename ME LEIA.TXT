@@ -1,0 +1,3 @@
+abra o terminal e escreva:
+node server.js
+Depois abra o aqruivo index.html

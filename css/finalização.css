@@ -1,0 +1,90 @@
+/* Reset e ajustes básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #087d8d; /* Fundo escuro para combinar com a logo */
+    color: #00bcd4; /* Usando azul semelhante ao da logo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilo da div de agradecimento */
+.agradecimento {
+    background-color: #1e1e1e; /* Tom escuro de fundo para o conteúdo */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    border: 2px solid #00bcd4; /* Borda azul para destacar */
+}
+
+/* Estilo da logo */
+#img-logo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 50%; /* Deixa a imagem mais integrada ao estilo */
+    filter: drop-shadow(0 0 3px #00bcd4);
+}
+
+/* Estilo do título e parágrafo */
+h1 {
+    font-size: 26px;
+    color: #00e5ff; /* Azul brilhante para chamar atenção */
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    color: #e0f7fa; /* Azul mais suave para o texto */
+}
+
+/* Efeitos de fade-in para os textos */
+.agradecimento h1, .agradecimento p {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilo do botão */
+#botao {
+    background-color: #00bcd4; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Efeito hover no botão */
+#botao:hover {
+    background-color: #00e5ff; /* Cor mais clara ao passar o mouse */
+    transform: scale(1.05); /* Leve efeito de crescimento */
+}
+
+/* Efeito de foco no botão */
+#botao:focus {
+    outline: none;
+    box-shadow: 0 0 10px #00e5ff; /* Destaque quando o botão está focado */
+}

@@ -43,7 +43,7 @@ function avaliar(valor){
     }
     for (var i = 0; i < 5; i++){
         if(i > nota){
-            imgs[i].src = "img/estrela0.png";
+            imgs[i].src = "img/estrela0.5.png";
         }
     }
 }
@@ -62,7 +62,7 @@ function enviarDados() {
         })
         .then(response => response.text())
         .then(data => {
-            window.location.replace('templates/só_agradece.html')
+            window.location.replace("templates/Finalização.html");
 
         })
         .catch(error => console.error('Erro:', error));

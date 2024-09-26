@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // Conectar ao banco de dados SQLite ou criar se não existir
-const db = new sqlite3.Database('./avaliacoes.db', (err) => {
+const db = new sqlite3.Database('bancoDados/avaliacoes.db', (err) => {
   if (err) {
     console.error(err.message);
   }

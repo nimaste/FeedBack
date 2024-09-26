@@ -1,0 +1,76 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #087d8d; /* Fundo escuro */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #e0f7fa; /* Texto com azul suave */
+}
+
+#img-logo {
+    max-width: 200px; /* Tamanho da logo */
+    height: auto;
+    margin-bottom: 20px; /* Espaço entre a logo e o formulário */
+    filter: drop-shadow(0 0 10px #00bcd4); /* Efeito de brilho ao redor da logo */
+}
+
+.form {
+    background-color: #1e1e1e; /* Fundo do formulário escuro */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra */
+    padding: 20px;
+    text-align: center;
+    width: 350px; /* Largura fixa */
+    border: 2px solid #00bcd4; /* Borda azul clara */
+}
+
+.imagens {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.imagens img {
+    width: 45px; /* Tamanho das estrelas */
+    cursor: pointer;
+    margin: 0 5px;
+    transition: transform 0.2s, filter 0.2s;
+}
+
+.imagens img:hover {
+    transform: scale(1.1); /* Efeito de zoom */
+    filter: drop-shadow(0 0 5px #00e5ff); /* Sombra azul ao passar o mouse */
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #121212; /* Fundo escuro no textarea */
+    color: #e0f7fa; /* Texto claro */
+    border: 1px solid #00bcd4; /* Borda azul */
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #00bcd4; /* Botão azul claro */
+    color: #ffffff; /* Texto branco */
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #00e5ff; /* Cor mais clara ao passar o mouse */
+    transform: scale(1.05); /* Efeito de crescimento no hover */
+}
